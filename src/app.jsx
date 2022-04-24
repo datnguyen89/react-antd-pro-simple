@@ -86,6 +86,8 @@ export const layout = ({initialState, setInitialState}) => {
             <SettingDrawer
               disableUrlParams
               enableDarkTheme
+              hideHintAlert
+              hideCopyButton
               settings={initialState?.settings}
               onSettingChange={(settings) => {
                 setInitialState((preInitialState) => ({...preInitialState, settings}));
